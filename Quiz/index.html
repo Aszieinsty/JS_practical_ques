@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Interactive Quiz</h1>
+        <form id="quiz-form">
+            <div id="question-container">
+                <!-- Question 1 -->
+                <div class="question">
+                    <p>1. What is the capital of France?</p>
+                    <div class="options">
+                        <input type="radio" name="answer1" value="Paris" id="option1_1">
+                        <label for="option1_1">Berlin</label>
+                        <input type="radio" name="answer1" value="London" id="option1_2">
+                        <label for="option1_2">Madrid</label>
+                        <input type="radio" name="answer1" value="Berlin" id="option1_3">
+                        <label for="option1_3">Paris</label>
+                    </div>
+                </div>
+                
+                <!-- Question 2 -->
+                <div class="question">
+                    <p>2. Which planet is known as the Red Planet?</p>
+                    <div class="options">
+                        <input type="radio" name="answer2" value="Mars" id="option2_1">
+                        <label for="option2_1">Earth</label>
+                        <input type="radio" name="answer2" value="Venus" id="option2_2">
+                        <label for="option2_2">Mars</label>
+                        <input type="radio" name="answer2" value="Jupiter" id="option2_3">
+                        <label for="option2_3">Jupiter</label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question">
+                    <p>3. What is the largest mammal in the world?</p>
+                    <div class="options">
+                        <input type="radio" name="answer3" value="Elephant" id="option3_1">
+                        <label for="option3_1">Elephant</label>
+                        <input type="radio" name="answer3" value="Blue Whale" id="option3_2">
+                        <label for="option3_2">Blue Whale</label>
+                        <input type="radio" name="answer3" value="Giraffe" id="option3_3">
+                        <label for="option3_3">Giraffe</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
